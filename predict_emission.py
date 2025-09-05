@@ -11,7 +11,7 @@ from tensorflow.keras.regularizers import l2
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Set random seeds for reproducibility
+# seeds for reproducibility
 np.random.seed(42)
 tf.random.set_seed(42)
 
@@ -277,4 +277,5 @@ for i, (name, corr) in enumerate(zip(feature_names, correlations)):
 
 print(f"\n✨ Model training completed successfully!")
 print(f"The model now achieves much better performance with R² = {test_r2:.3f}")
+
 print(f"Mean Absolute Error reduced to: {test_mae:.2f} nm")
